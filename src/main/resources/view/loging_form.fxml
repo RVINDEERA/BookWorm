@@ -8,61 +8,56 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="870.0" prefWidth="1239.0" styleClass="anchor-pane-with-background" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+<AnchorPane fx:id="root" prefHeight="870.0" prefWidth="1239.0" style="-fx-background-color: BLACK;" styleClass="anchor-pane-with-background" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="179.0" layoutY="334.0" prefHeight="411.0" prefWidth="348.0" styleClass="anchor-pane-with-background2" stylesheets="@../styles/Login.css">
+      <AnchorPane layoutX="173.0" layoutY="368.0" prefHeight="411.0" prefWidth="371.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
          <children>
-            <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="100.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="111.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/usernew.png" />
+                  <Image url="@../images/whiteuser.png" />
                </image>
             </ImageView>
-            <Label layoutX="131.0" layoutY="227.0" prefHeight="46.0" prefWidth="87.0" text="User">
+            <Label layoutX="143.0" layoutY="235.0" prefHeight="46.0" prefWidth="87.0" text="User" textFill="WHITE">
                <font>
                   <Font name="DejaVu Sans Mono Bold" size="33.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnUserLogin" buttonType="RAISED" layoutX="74.0" layoutY="299.0" onAction="#btnUserLoginOnAction" prefHeight="62.0" prefWidth="198.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+            <JFXButton fx:id="btnUserLogin" buttonType="RAISED" layoutX="87.0" layoutY="300.0" onAction="#btnUserLoginOnAction" prefHeight="62.0" prefWidth="198.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="719.0" layoutY="333.0" prefHeight="411.0" prefWidth="348.0" styleClass="anchor-pane-with-background2" stylesheets="@../styles/Login.css">
+      <AnchorPane layoutX="718.0" layoutY="368.0" prefHeight="411.0" prefWidth="348.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
          <children>
-            <ImageView fitHeight="123.0" fitWidth="149.0" layoutX="112.0" layoutY="94.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="123.0" fitWidth="149.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../images/adminnew.png" />
+                  <Image url="@../images/whiteadmin.png" />
                </image>
             </ImageView>
-            <Label layoutX="115.0" layoutY="217.0" prefHeight="46.0" prefWidth="119.0" text="Admin">
+            <Label layoutX="125.0" layoutY="232.0" prefHeight="46.0" prefWidth="106.0" text="Admin" textFill="WHITE">
                <font>
                   <Font name="DejaVu Sans Mono Bold" size="33.0" />
                </font>
             </Label>
-            <JFXButton fx:id="btnAdminLogin" buttonType="RAISED" layoutX="74.0" layoutY="299.0" onAction="#btnAdminLoginOnAction" prefHeight="62.0" prefWidth="198.0" style="-fx-background-color: black;" text="Login" textFill="WHITE">
+            <JFXButton fx:id="btnAdminLogin" buttonType="RAISED" layoutX="76.0" layoutY="299.0" onAction="#btnAdminLoginOnAction" prefHeight="62.0" prefWidth="198.0" style="-fx-border-color: white; -fx-background-radius: 30; -fx-border-radius: 30;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="20.0" />
                </font>
             </JFXButton>
          </children>
       </AnchorPane>
-      <Label layoutX="471.0" layoutY="21.0" prefHeight="129.0" prefWidth="352.0" text="WELCOME TO ">
+      <Label layoutX="456.0" layoutY="277.0" prefHeight="47.0" prefWidth="371.0" text="Choose Your Profile To Continue" textFill="#fff2f2">
          <font>
-            <Font name="RaviPrakash" size="47.0" />
+            <Font name="Ubuntu Mono Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="343.0" layoutY="321.0" prefHeight="47.0" prefWidth="589.0" text="Choose your Profile to continue">
+      <Label layoutX="245.0" layoutY="49.0" prefHeight="191.0" prefWidth="793.0" text="BOOK WORM" textFill="WHITE">
          <font>
-            <Font name="FreeMono Bold" size="31.0" />
+            <Font name="Ubuntu Bold" size="120.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" height="149.0" layoutY="138.0" stroke="BLACK" strokeType="INSIDE" width="1239.0" />
-      <Label layoutX="217.0" layoutY="116.0" prefHeight="191.0" prefWidth="848.0" text="BOOK WORM" textFill="WHITE">
-         <font>
-            <Font name="Rasa Bold" size="150.0" />
-         </font>
-      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" layoutX="176.0" layoutY="55.0" stroke="WHITE" strokeType="INSIDE" width="911.0" />
    </children>
 </AnchorPane>
