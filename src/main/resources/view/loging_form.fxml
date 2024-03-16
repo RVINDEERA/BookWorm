@@ -53,7 +53,7 @@
             <Font name="Ubuntu Mono Bold" size="23.0" />
          </font>
       </Label>
-      <Label layoutX="245.0" layoutY="49.0" prefHeight="191.0" prefWidth="793.0" text="BOOK WORM" textFill="WHITE">
+      <Label layoutX="245.0" layoutY="49.0" prefHeight="191.0" prefWidth="793.0" text="BOOK WORM" textFill="#ab8259">
          <font>
             <Font name="Ubuntu Bold" size="120.0" />
          </font>
