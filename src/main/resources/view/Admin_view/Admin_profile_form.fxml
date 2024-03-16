@@ -3,7 +3,6 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -37,10 +36,10 @@
             <TextField fx:id="txtUserName" editable="false" layoutX="176.0" layoutY="199.0" prefHeight="33.0" prefWidth="418.0" />
             <TextField fx:id="txtPw" editable="false" layoutX="177.0" layoutY="278.0" prefHeight="33.0" prefWidth="418.0" />
             <TextField fx:id="txtEmail" editable="false" layoutX="178.0" layoutY="352.0" prefHeight="33.0" prefWidth="418.0" />
-            <JFXButton fx:id="btnDelete" layoutX="87.0" layoutY="466.0" onAction="#btnDeleteOnAction" styleClass="button-color2" text="Delete Account" />
-            <JFXButton fx:id="btnUpdate" layoutX="250.0" layoutY="466.0" onAction="#btnUpdateOnAction" styleClass="button-color2" text="Update Account" />
-            <JFXButton fx:id="btnAddAdmin" layoutX="426.0" layoutY="466.0" onAction="#btnAddAdminOnAction" styleClass="button-color2" text="Add new Admin" />
-            <JFXButton fx:id="btnLogOut" layoutX="584.0" layoutY="466.0" onAction="#btnLogOutOnAction" prefHeight="28.0" prefWidth="88.0" styleClass="button-color2" text="Log out" />
+            <JFXButton fx:id="btnDelete" layoutX="87.0" layoutY="466.0" onAction="#btnDeleteOnAction" style="-fx-background-color: black;" styleClass="button-color2" text="Delete Account" textFill="WHITE" />
+            <JFXButton fx:id="btnUpdate" layoutX="250.0" layoutY="466.0" onAction="#btnUpdateOnAction" style="-fx-background-color: black;" styleClass="button-color2" text="Update Account" textFill="WHITE" />
+            <JFXButton fx:id="btnAddAdmin" layoutX="426.0" layoutY="466.0" onAction="#btnAddAdminOnAction" style="-fx-background-color: black;" styleClass="button-color2" text="Add new Admin" textFill="WHITE" />
+            <JFXButton fx:id="btnLogOut" layoutX="584.0" layoutY="466.0" onAction="#btnLogOutOnAction" prefHeight="28.0" prefWidth="98.0" style="-fx-background-color: black;" styleClass="button-color2" text="Log out" textFill="WHITE" />
             <JFXButton fx:id="btnSaveChanges" buttonType="RAISED" layoutX="241.0" layoutY="452.0" onAction="#btnSaveChangesOnAction" prefHeight="28.0" prefWidth="328.0" styleClass="button-color-register" text="Save Changes" visible="false">
                <font>
                   <Font size="14.0" />
@@ -57,9 +56,6 @@
          <image>
             <Image url="@../../images/adminnew.png" />
          </image>
-         <effect>
-            <DropShadow />
-         </effect>
       </ImageView>
    </children>
 </AnchorPane>

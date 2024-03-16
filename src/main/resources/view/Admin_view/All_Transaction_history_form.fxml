@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="792.0" prefWidth="1239.0" styleClass="anchor-pane-with-background" stylesheets="@../../styles/Dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AllTransactionHistoryFormController">
+<AnchorPane fx:id="root" prefHeight="792.0" prefWidth="1239.0" style="-fx-background-color: white;" stylesheets="@../../styles/Dashboard.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.AllTransactionHistoryFormController">
    <children>
-      <Label layoutX="359.0" layoutY="46.0" prefHeight="51.0" prefWidth="431.0" text="Transaction History" textFill="#ab8259">
+      <Label layoutX="371.0" layoutY="31.0" prefHeight="54.0" prefWidth="498.0" text="Transaction History">
          <font>
-            <Font name="Abyssinica SIL" size="44.0" />
+            <Font name="DejaVu Sans Bold" size="44.0" />
          </font>
       </Label>
       <ComboBox fx:id="combType" layoutX="251.0" layoutY="121.0" onAction="#combTypeOnAction" prefHeight="43.0" prefWidth="356.0" promptText="Select Type" style="-fx-background-color: white;" styleClass="text-field" />
@@ -51,7 +51,7 @@
             <Image url="@../../images/icons8-search-80.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="btnOverdue" buttonType="RAISED" layoutX="866.0" layoutY="685.0" onAction="#btnOverdueAction" prefHeight="43.0" prefWidth="279.0" styleClass="button-color2" stylesheets="@../../styles/Login.css" text="Overdue Books" textFill="#a15935">
+      <JFXButton fx:id="btnOverdue" buttonType="RAISED" layoutX="866.0" layoutY="685.0" onAction="#btnOverdueAction" prefHeight="43.0" prefWidth="279.0" style="-fx-background-color: black; -fx-background-radius: 20;" styleClass="button-color2" stylesheets="@../../styles/Login.css" text="Overdue Books" textFill="WHITE">
          <font>
             <Font name="DejaVu Sans Bold" size="17.0" />
          </font>

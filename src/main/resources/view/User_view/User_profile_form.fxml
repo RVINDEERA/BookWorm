@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import java.net.URL?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
@@ -9,37 +8,23 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="792.0" prefWidth="1245.0" styleClass="admin-anchor-pane" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserProfileFormController">
-   <stylesheets>
-      <URL value="@../../styles/Login.css" />
-      <URL value="@../../styles/Login.css" />
-   </stylesheets>
+<AnchorPane prefHeight="792.0" prefWidth="1245.0" style="-fx-background-color: white;" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserProfileFormController">
    <children>
-      <ImageView fitHeight="348.0" fitWidth="318.0" layoutX="830.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/7c0e1ecf91f34e736e867698817c6780-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <AnchorPane layoutX="253.0" layoutY="165.0" prefHeight="591.0" prefWidth="522.0" styleClass="anchor-pane-with-background2">
+      <AnchorPane layoutX="194.0" layoutY="148.0" prefHeight="591.0" prefWidth="522.0" styleClass="anchor-pane-with-background2">
          <children>
-            <ImageView fitHeight="112.0" fitWidth="137.0" layoutX="198.0" layoutY="-56.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../../images/icons8-life-cycle-100.png" />
-               </image>
-            </ImageView>
-            <TextField fx:id="txtName" layoutX="81.0" layoutY="102.0" prefHeight="41.0" prefWidth="357.0">
+            <TextField fx:id="txtName" layoutX="81.0" layoutY="102.0" prefHeight="41.0" prefWidth="357.0" style="-fx-background-radius: 20;">
                <font>
                   <Font size="15.0" />
                </font></TextField>
-            <TextField fx:id="txtEmail" layoutX="83.0" layoutY="209.0" prefHeight="41.0" prefWidth="357.0">
+            <TextField fx:id="txtEmail" layoutX="83.0" layoutY="209.0" prefHeight="41.0" prefWidth="357.0" style="-fx-background-radius: 20;">
                <font>
                   <Font size="15.0" />
                </font></TextField>
-            <TextField fx:id="txtPw" layoutX="83.0" layoutY="319.0" prefHeight="41.0" prefWidth="357.0">
+            <TextField fx:id="txtPw" layoutX="83.0" layoutY="319.0" prefHeight="41.0" prefWidth="357.0" style="-fx-background-radius: 20;">
                <font>
                   <Font size="15.0" />
                </font></TextField>
-            <TextField fx:id="txtTele" layoutX="83.0" layoutY="430.0" prefHeight="41.0" prefWidth="357.0">
+            <TextField fx:id="txtTele" layoutX="83.0" layoutY="430.0" prefHeight="41.0" prefWidth="357.0" style="-fx-background-radius: 20;">
                <font>
                   <Font size="15.0" />
                </font></TextField>
@@ -68,32 +53,32 @@
                   <Font name="DejaVu Serif Bold" size="17.0" />
                </font>
             </JFXButton>
+            <JFXButton fx:id="btnUpadte" layoutX="-75.0" layoutY="512.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="193.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Update Account" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnDelete" layoutX="198.0" layoutY="512.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="193.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Delete Account" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnLogOUt" layoutX="475.0" layoutY="512.0" onAction="#btnLogOutOnAction" prefHeight="41.0" prefWidth="193.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font name="DejaVu Serif Bold" size="17.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="473.0" fitWidth="432.0" layoutX="475.0" layoutY="59.0" opacity="0.1" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/usernew.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
-      <Label layoutX="514.0" layoutY="49.0" prefHeight="63.0" prefWidth="264.0" text="My profile" textFill="#9e6935">
+      <Label layoutX="279.0" layoutY="94.0" prefHeight="63.0" prefWidth="432.0" text="User Profile">
          <font>
-            <Font name="Abyssinica SIL" size="44.0" />
+            <Font name="DejaVu Sans Bold" size="44.0" />
          </font>
       </Label>
-      <JFXButton fx:id="btnUpadte" layoutX="869.0" layoutY="279.0" onAction="#btnUpdateOnAction" prefHeight="41.0" prefWidth="193.0" styleClass="button-color2" text="Update Account">
-         <font>
-            <Font name="DejaVu Serif Bold" size="17.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="btnDelete" layoutX="869.0" layoutY="376.0" onAction="#btnDeleteOnAction" prefHeight="41.0" prefWidth="193.0" styleClass="button-color2" text="Delete Account">
-         <font>
-            <Font name="DejaVu Serif Bold" size="17.0" />
-         </font>
-      </JFXButton>
-      <ImageView fitHeight="388.0" fitWidth="484.0" layoutX="640.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../images/Book-Logo-2022-removebg-preview.png" />
-         </image>
-      </ImageView>
-      <JFXButton fx:id="btnLogOUt" layoutX="875.0" layoutY="477.0" onAction="#btnLogOutOnAction" prefHeight="41.0" prefWidth="193.0" styleClass="button-color2" text="LogOut">
-         <font>
-            <Font name="DejaVu Serif Bold" size="17.0" />
-         </font>
-      </JFXButton>
    </children>
 </AnchorPane>

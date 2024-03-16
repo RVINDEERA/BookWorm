@@ -17,12 +17,12 @@
    <children>
       <AnchorPane fx:id="pane2" layoutY="79.0" prefHeight="792.0" prefWidth="1239.0">
          <children>
-            <Label layoutX="389.0" layoutY="340.0" prefHeight="36.0" prefWidth="388.0" text="Today's Checked-Out Titles">
+            <Label layoutX="392.0" layoutY="352.0" prefHeight="36.0" prefWidth="388.0" text="Today's Checked-Out Titles">
                <font>
-                  <Font name="DejaVu Serif Bold" size="22.0" />
+                  <Font name="DejaVu Sans Bold" size="25.0" />
                </font>
             </Label>
-            <TableView fx:id="tblCheckOuts" layoutX="143.0" layoutY="422.0" prefHeight="241.0" prefWidth="886.0" stylesheets="@../../styles/Dashboard.css">
+            <TableView fx:id="tblCheckOuts" layoutX="143.0" layoutY="422.0" prefHeight="241.0" prefWidth="834.0" stylesheets="@../../styles/Dashboard.css">
               <columns>
                 <TableColumn fx:id="colId" prefWidth="165.0" text="Branch Name" />
                 <TableColumn fx:id="colName" minWidth="0.0" prefWidth="262.0" text="Borrower Name" />
@@ -35,58 +35,58 @@
                   <String fx:value="table-view" />
                </styleClass>
             </TableView>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="206.0" layoutX="666.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="334.0" />
-            <Label layoutX="764.0" layoutY="81.0" prefHeight="45.0" prefWidth="168.0" text="Total Books" textFill="WHITE">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="206.0" layoutX="666.0" layoutY="29.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="334.0" />
+            <Label layoutX="743.0" layoutY="84.0" prefHeight="45.0" prefWidth="181.0" text="Total Books" textFill="WHITE">
                <font>
-                  <Font name="Garuda Bold" size="27.0" />
+                  <Font name="DejaVu Sans Bold" size="27.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </Label>
-            <Label fx:id="lblBook" layoutX="802.0" layoutY="140.0" prefHeight="40.0" prefWidth="117.0" text="50" textFill="WHITE">
+            <Label fx:id="lblBook" layoutX="804.0" layoutY="140.0" prefHeight="81.0" prefWidth="60.0" text="50" textFill="WHITE">
                <font>
                   <Font name="Gayathri Bold" size="48.0" />
                </font>
             </Label>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="206.0" layoutX="183.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="334.0" />
-            <Label layoutX="273.0" layoutY="81.0" prefHeight="45.0" prefWidth="168.0" text="Total Users" textFill="WHITE">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="206.0" layoutX="183.0" layoutY="38.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="334.0" />
+            <Label layoutX="264.0" layoutY="84.0" prefHeight="45.0" prefWidth="174.0" text="Total Users" textFill="WHITE">
                <font>
-                  <Font name="Garuda Bold" size="27.0" />
+                  <Font name="DejaVu Sans Bold" size="27.0" />
                </font>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
                </cursor>
             </Label>
-            <Label fx:id="lblUser" layoutX="313.0" layoutY="140.0" prefHeight="61.0" prefWidth="75.0" text="50" textFill="WHITE">
+            <Label fx:id="lblUser" layoutX="313.0" layoutY="150.0" prefHeight="61.0" prefWidth="75.0" text="50" textFill="WHITE">
                <font>
-                  <Font name="Gayathri Bold" size="48.0" />
+                  <Font name="DejaVu Sans Bold" size="48.0" />
                </font>
             </Label>
          </children></AnchorPane>
       <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="80.0" prefWidth="1239.0" style="-fx-background-color: black;">
          <children>
-            <JFXButton fx:id="btnBook" layoutX="298.0" layoutY="15.0" onAction="#btnBookOnAction" prefHeight="51.0" prefWidth="174.0" ripplerFill="#bc5050" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Manage Book">
+            <JFXButton fx:id="btnBook" layoutX="367.0" layoutY="15.0" onAction="#btnBookOnAction" prefHeight="51.0" prefWidth="174.0" ripplerFill="#bc5050" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Manage Book">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="Dashboard" layoutX="67.0" layoutY="15.0" onAction="#dashboardOnAction" prefHeight="51.0" prefWidth="174.0" style="-fx-background-color: white;" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="DashBoard">
+            <JFXButton fx:id="Dashboard" layoutX="136.0" layoutY="15.0" onAction="#dashboardOnAction" prefHeight="51.0" prefWidth="174.0" style="-fx-background-color: white;" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="DashBoard">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnBranches" layoutX="525.0" layoutY="15.0" onAction="#btnBranchesOnAction" prefHeight="51.0" prefWidth="174.0" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Manage Branches">
+            <JFXButton fx:id="btnBranches" layoutX="594.0" layoutY="15.0" onAction="#btnBranchesOnAction" prefHeight="51.0" prefWidth="174.0" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Manage Branches">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="btnTransaction" layoutX="749.0" layoutY="15.0" onAction="#btnTransactionOnAction" prefHeight="51.0" prefWidth="181.0" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Transaction History">
+            <JFXButton fx:id="btnTransaction" layoutX="818.0" layoutY="15.0" onAction="#btnTransactionOnAction" prefHeight="51.0" prefWidth="181.0" styleClass="button-color" stylesheets="@../../styles/Dashboard.css" text="Transaction History">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </JFXButton>
-            <ImageView fx:id="imgExit" fitHeight="51.0" fitWidth="51.0" layoutX="1151.0" layoutY="15.0" onMouseClicked="#imgExitOnAction" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="imgExit" fitHeight="51.0" fitWidth="51.0" layoutX="1151.0" layoutY="15.0" onMouseClicked="#imgExitOnAction" opacity="0.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/icons8-close-window-100.png" />
                </image>
@@ -96,7 +96,7 @@
             </ImageView>
             <ImageView fx:id="imgProfile" fitHeight="51.0" fitWidth="51.0" layoutX="1083.0" layoutY="15.0" onMouseClicked="#imgProfileOnAction" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../../images/adminnew.png" />
+                  <Image url="@../../images/whiteadmin.png" />
                </image>
                <cursor>
                   <Cursor fx:constant="DEFAULT" />
