@@ -8,9 +8,9 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="870.0" prefWidth="1239.0" style="-fx-background-color: BLACK;" styleClass="anchor-pane-with-background" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
+<AnchorPane fx:id="root" prefHeight="820.0" prefWidth="1239.0" style="-fx-background-color: BLACK;" styleClass="anchor-pane-with-background" stylesheets="@../styles/Login.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.LoginFormController">
    <children>
-      <AnchorPane layoutX="173.0" layoutY="368.0" prefHeight="411.0" prefWidth="371.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
+      <AnchorPane layoutX="225.0" layoutY="366.0" prefHeight="411.0" prefWidth="371.0" style="-fx-border-color: ab8259; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
          <children>
             <ImageView fitHeight="149.0" fitWidth="154.0" layoutX="111.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -29,7 +29,7 @@
             </JFXButton>
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="718.0" layoutY="368.0" prefHeight="411.0" prefWidth="348.0" style="-fx-border-color: white; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
+      <AnchorPane layoutX="690.0" layoutY="366.0" prefHeight="411.0" prefWidth="348.0" style="-fx-border-color: ab8259; -fx-background-radius: 50; -fx-border-radius: 50;" stylesheets="@../styles/Login.css">
          <children>
             <ImageView fitHeight="123.0" fitWidth="149.0" layoutX="113.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -58,6 +58,6 @@
             <Font name="Ubuntu Bold" size="120.0" />
          </font>
       </Label>
-      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="200.0" layoutX="176.0" layoutY="55.0" stroke="WHITE" strokeType="INSIDE" width="911.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ab825900" height="200.0" layoutX="176.0" layoutY="55.0" stroke="#ab8259" strokeType="INSIDE" width="911.0" />
    </children>
 </AnchorPane>

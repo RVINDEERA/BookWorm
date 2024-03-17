@@ -23,12 +23,12 @@
                         <Font name="DejaVu Sans Bold" size="46.0" />
                     </font>
                 </Label>
-                <TextField fx:id="txtUserName" layoutX="85.0" layoutY="209.0" prefHeight="56.0" prefWidth="411.0" promptText="UserName" style="-fx-background-radius: 20;" styleClass="text-field" stylesheets="@../../styles/Login.css">
+                <TextField fx:id="txtUserName" layoutX="85.0" layoutY="209.0" prefHeight="56.0" prefWidth="411.0" promptText="Email" style="-fx-background-radius: 20;" styleClass="text-field" stylesheets="@../../styles/Login.css">
                     <font>
                         <Font size="16.0" />
                     </font>
                 </TextField>
-                <Label layoutX="89.0" layoutY="162.0" prefHeight="33.0" prefWidth="155.0" text="UserName">
+                <Label layoutX="89.0" layoutY="162.0" prefHeight="33.0" prefWidth="155.0" text="Email">
                     <font>
                         <Font size="21.0" />
                     </font>
