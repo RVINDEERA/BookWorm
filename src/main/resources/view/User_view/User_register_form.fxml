@@ -5,12 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.BoxBlur?>
+<?import javafx.scene.effect.DropShadow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="870.0" prefWidth="1239.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserRegisterFormController">
+<AnchorPane fx:id="root" prefHeight="870.0" prefWidth="1239.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.UserRegisterFormController">
    <children>
       <AnchorPane layoutX="247.0" layoutY="83.0" prefHeight="718.0" prefWidth="675.0" styleClass="anchor-pane-with-background2">
          <children>
@@ -70,5 +71,20 @@
             </Label>
          </children>
       </AnchorPane>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="1067.0" layoutY="42.0" onAction="#btnBackOnAction" prefHeight="63.0" prefWidth="139.0" style="-fx-background-radius: 100; -fx-border-radius: 100; -fx-border-color: black; -fx-background-color: black;" text="Back" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/whiteback.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </JFXButton>
    </children>
 </AnchorPane>

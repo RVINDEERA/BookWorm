@@ -11,6 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import lk.ijse.Bo.BoFactory;
 import lk.ijse.Bo.custom.Boimpl.BranchBoImpl;
@@ -28,6 +29,9 @@ import java.util.regex.Pattern;
 
 public class UserRegisterFormController {
 
+
+    @FXML
+    private AnchorPane root;
     public ComboBox<String> cmbBranch;
     @FXML
     private JFXButton btnCreateAccount;
@@ -102,6 +106,20 @@ public class UserRegisterFormController {
         }
 
         return  true;
+
+    }
+    @FXML
+    void btnBackOnAction(ActionEvent event) {
+        AnchorPane anchorPane = null;
+        try {
+            anchorPane = FXMLLoader.load(getClass().getResource("/view/loging_form.fxml"));
+            Scene scene = new Scene(anchorPane);
+            Stage stage = (Stage) root.getScene().getWindow();
+            stage.setScene(scene);
+            stage.centerOnScreen();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
 
