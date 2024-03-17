@@ -20,7 +20,7 @@
             <Font name="DejaVu Sans Bold" size="44.0" />
          </font>
       </Label>
-      <TableView fx:id="tblBook" layoutX="649.0" layoutY="217.0" prefHeight="472.0" prefWidth="564.0">
+      <TableView fx:id="tblBook" layoutX="649.0" layoutY="217.0" prefHeight="472.0" prefWidth="494.0">
         <columns>
           <TableColumn fx:id="colBookTitle" prefWidth="164.0" text="Book Title" />
           <TableColumn fx:id="colAuthor" prefWidth="174.0" text="Author" />
